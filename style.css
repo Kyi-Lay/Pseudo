@@ -1,9 +1,9 @@
 :root {
---unique-color: Red;
---primary-color: #000;
---secondary-color: #0000;
+--unique-color: rgb(218, 54, 54);
+--primary-color: #8b1818;
+--secondary-color: #86454500;
 --trans-colr:transparent;
---bgcolor: yellow;
+--bgcolor: rgb(139, 139, 58);
 background-color: var(--bgcolor);
 }
 
@@ -63,4 +63,64 @@ p.readmore:hover .first {
 
 p.readmore:hover .second {
 display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(114, 50, 50);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+th :first-child {
+  color: rgb(154, 183, 209);
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
+thead,
+tfoot {
+  background-color: rgb(80, 94, 100);
+}
+
+th,
+td {
+  border: 1px solid rgb(143, 100, 100);
+  padding: 8px 10px;
+}
+
+thead tr th {
+  color: var(--unique-color);
+  font-size: 1.5em;
+}
+
+tbody tr th, td{
+  text-align: left;
+  line-height: 1.5;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(54, 59, 82);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+tbody tr th, tfoot tr th {
+  color: var(--tertiary-color);
+}
+
+tfoot tr th span {
+  color: var(--unique-color);
 }
